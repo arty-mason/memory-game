@@ -50,13 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "images/hotdog.png"
         }
     ];
+
     cardArray.sort(() => 0.5 - Math.random());//Radnomizing the cards to make the game renewable
     //create your board
     const grid = document.querySelector('.grid');
     const resultDisplay = document.querySelector('#result');
-    var cardsChosen = [];//Creating an empty array for chosen cards
-    var cardsChosenId = [];//Creating an empty array for chosen cards' ID
-    var cardsWon = [];//Creating an empty array for matched cards
+    let cardsChosen = [];//Creating an empty array for chosen cards
+    let cardsChosenId = [];//Creating an empty array for chosen cards' ID
+    let cardsWon = [];//Creating an empty array for matched cards
 
 
     //Create your board
